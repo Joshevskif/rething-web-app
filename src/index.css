@@ -1,0 +1,24 @@
+:root {
+  --rething-yellow: #f3d30d;
+  --rething-purple: #724cf9;
+  --rething-white: #fff;
+  --rething-black: #000;
+  --rething-dark: #252626;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin-top: 30px;
+}
+h1 {
+  font-size: 60px;
+}
+
+.main-div{
+  margin-bottom: 100px;
+}

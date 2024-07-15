@@ -1,0 +1,45 @@
+.hero_container {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.left_container {
+    flex: 1;
+}
+
+.right_container{
+    flex: 1;
+}
+.right_container img{
+    width: 100%;
+}
+
+.button_container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button_one{
+    all: unset;
+    background-color: var(--rething-yellow);
+    color: white;
+    font-family: 16px;
+    padding: 14px 42px;
+    border-radius: 50px;
+}
+
+.button_two{
+    all: unset;
+    background-color: var(--rething-purple);
+    color: white;
+    font-size: 16px;
+    padding: 14px 42px;
+    border-radius: 50px;
+}
+
+
+.para {
+    font-size: 20px;
+}

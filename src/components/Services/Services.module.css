@@ -1,0 +1,50 @@
+/* Technologies.module.css */
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .color {
+    /* background: linear-gradient(to right, #ffffe0, #fffacd, #fff8b5, #ffeb99); */
+    background-color: var(--rething-black);
+    padding: 120px 0px;
+    
+}
+  .text {
+    font-size: 46px;
+    color: white;
+
+  }
+
+  .para {
+    margin-top: 30px;
+    color: white;
+  }
+
+  .para1 {
+    color: white;
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .small {
+    color: white;
+  }
+
+  .flex{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+
+  .flex1 img {
+    background-color: white;
+  }

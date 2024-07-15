@@ -1,0 +1,41 @@
+/* Technologies.module.css */
+.container {
+    text-align: center;
+  }
+  
+  .para {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .marquee {
+    position: relative;
+    margin: 50px 0px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text{
+    font-size: 46px;
+    line-height: 3rem;
+  }
+  
+  .marqueeInner {
+    display: flex;
+    width: fit-content;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marqueeInner img {
+    padding: 0 20px; /* Adjust padding for spacing */
+    height: 100%;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(20%); }
+    100% { transform: translateX(-50%); }
+  }
+  

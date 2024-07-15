@@ -1,0 +1,14 @@
+.banner_container {
+    background: linear-gradient(to right, #724cf9, #f3d30d);
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .banner_container h2 {
+    color: white;
+    font-size: 18px;
+  }
