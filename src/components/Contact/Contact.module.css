@@ -1,0 +1,31 @@
+
+.contact_card {
+    display: flex;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+
+.text {
+    margin: 50px 0px;
+}
+
+.color {
+    margin-top: 50px;
+    text-align: center;
+}
+.contact_information {
+    background-color: var(--rething-yellow);
+    border-radius: 8px;
+    height: 100%;
+    flex: 30%;
+}
+
+.email_form {
+    flex: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}

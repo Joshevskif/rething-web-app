@@ -1,0 +1,53 @@
+.main_wrapper {
+    height: 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    position: fixed; /* Make the navigation bar fixed */
+    width: 100%; /* Ensure it takes the full width */
+    top: 0; /* Position it at the top */
+    background-color: white; /* Add a background color to avoid transparency issues */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    height: 100%;
+}
+
+.link_container {
+    display: flex;
+    gap: 40px;
+}
+
+.link_container a {
+    all: unset;
+    font-size: 16px;
+    line-height: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.logo {
+    cursor: pointer;
+}
+.button_one {
+    all: unset;
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+    padding: 10px 30px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button_one:hover {
+    background-position: right center; /* Change the direction of the change here */
+    color: black;
+    text-decoration: none;
+}

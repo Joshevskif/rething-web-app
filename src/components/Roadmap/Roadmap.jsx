@@ -33,7 +33,7 @@ const Roadmap = () => {
           <div
             ref={ref1}
             className={`${
-              inView1 ? 'animate__animated animate__bounceInLeft animate__delay-0s' : ''
+              inView1 ? 'animate__animated animate__fadeInLeft animate__delay-0s' : ''
             }`}
           >
             <h2>Research</h2>
@@ -42,7 +42,7 @@ const Roadmap = () => {
           <div
             ref={ref2}
             className={`${
-              inView2 ? 'animate__animated animate__bounceInLeft animate__delay-0.5s' : ''
+              inView2 ? 'animate__animated animate__fadeInLeft animate__delay-0.5s' : ''
             }`}
           >
             <h2>Design</h2>
@@ -51,7 +51,7 @@ const Roadmap = () => {
           {/* <div
             ref={ref2}
             className={`${
-              inView2 ? 'animate__animated animate__bounceInLeft animate__delay-0.5s' : ''
+              inView2 ? 'animate__animated animate__fadeInLeft animate__delay-0.5s' : ''
             }`}
           >
             <h2>Design</h2>
@@ -60,7 +60,7 @@ const Roadmap = () => {
           <div
             ref={ref3}
             className={`${
-              inView3 ? 'animate__animated animate__bounceInLeft animate__delay-0.9s' : ''
+              inView3 ? 'animate__animated animate__fadeInLeft animate__delay-0.9s' : ''
             }`}
           >
             <h2>Development</h2>
@@ -70,7 +70,7 @@ const Roadmap = () => {
         <div
             ref={ref1}
             className={`${
-              inView1 ? 'animate__animated animate__bounceInRight animate__delay-1.3s' : ''
+              inView1 ? 'animate__animated animate__fadeInRight animate__delay-1.3s' : ''
             } ${classes.right_container}`}
           >
           <img src={analythics} alt="Analytics" />

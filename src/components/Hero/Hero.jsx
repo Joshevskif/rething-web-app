@@ -15,10 +15,12 @@ const Hero = () => {
     
   return (
     <ContentWrapper className={classes.hero_container}>
-      <div className={`animate__animated animate__bounceInLeft ${classes.left_container}`}>
+      <div className={`animate__animated animate__fadeInLeft ${classes.left_container}`}>
+        <div className={classes.text_container}>
         <h1>We deliver solutions</h1>
-        <h1>Wanna know</h1>
-        <h1>How?</h1>
+        <h1>Wanna <span className={classes.spanka}>know</span></h1>
+        <h1 className={classes.spanka}>How?</h1>
+        </div>
 
             <p className={classes.para}>Drive growth, innovation, and every major decision your business makes. Break free  from the limits of spreadsheets, and static budgets. Step into the limelight with the insights, influence, and recognition you deserve.
 
@@ -28,7 +30,7 @@ const Hero = () => {
                 <Button className={classes.button_two} text={'No, say something funny'}></Button>
                 </div>
         </div>
-        <div className={`animate__animated animate__bounceInRight ${classes.right_container}`}>
+        <div className={`animate__animated animate__fadeInRight ${classes.right_container}`}>
         <Lottie animationData={video} />
         </div>
 
