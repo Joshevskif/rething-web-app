@@ -1,31 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font globally */
+}
+
+
 :root {
   --rething-yellow: #f3d30d;
   --rething-purple: #724cf9;
   --rething-white: #fff;
   --rething-black: #000;
   --rething-dark: #252626;
-
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #000; /* Black background for the body */
+  color: #fff;
 }
 
 h1 {
   font-size: 60px;
 }
-
-.main-div{
-  margin-bottom: 100px;
-}
-
-
 
 .wrapper {
   display: flex;
@@ -65,3 +73,5 @@ h1 {
   min-width: 150px;
   font-weight: bold;
 }
+
+

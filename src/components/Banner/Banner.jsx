@@ -1,13 +1,16 @@
-import React from 'react'
-import classes from "./Banner.module.css"
-import Button from '../Button/Button'
+import React from "react";
+import classes from "./Banner.module.css";
 
 const Banner = () => {
   return (
-    <div className={classes.banner_container}>
-    <h2>Rething in Minutes: Get started with out short video series </h2>
+    <div className={`container-fluid ${classes.banner_container}`}>
+      <div className="row">
+        <div className="col-12 text-center">
+          <h2>Accelerate Growth, Digitalize Fast, and Stay Ahead</h2>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

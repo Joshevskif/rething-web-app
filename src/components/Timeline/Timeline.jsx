@@ -1,119 +1,85 @@
-import React from 'react'
-import classes from "./Timeline.module.css"
-import {
-    VerticalTimeline,
-    VerticalTimelineElement
-  } from 'react-vertical-timeline-component';
-  import 'react-vertical-timeline-component/style.min.css';
-  
+import React from "react";
+import ContentWrapper from "../ContentWrapper/ContentWrapper";
+import classes from "./Timeline.module.css";
 
-  
+// Import your images
+import discoveryImage from "../../assets/discovery.png";
+import analysisImage from "../../assets/analysisImage.png";
+import designImage from "../../assets/designImage.png";
+import developmentImage from "../../assets/developmentImage.png";
+import deploymentImage from "../../assets/deploymentImage.png";
+import scalingImage from "../../assets/scalingImage.png";
 
 const Timeline = () => {
-    const timelineEvents = [
-        {title: 'Project Kickoff', description: 'Initial project kickoff meeting.' },
-        {title: 'Requirement Analysis', description: 'Detailed requirement analysis and gathering.' },
-        {title: 'Design Phase', description: 'Designing the architecture and UI/UX.' },
-        {title: 'Development Phase', description: 'Development of the project components.' },
-        {title: 'Deployment', description: 'Deployment and final delivery.' },
-      ];
+  const timelineEvents = [
+    {
+      title: "Discovery & Research",
+      description:
+        "Understanding your needs is our priority. We dive deep into your challenges, analyze your industry, study competitors, and explore market trends. Leveraging our experience, expertise, and the latest technologies, we craft a tailored solution designed to address your pain points and maximize your potential.",
+      image: discoveryImage,
+    },
+    {
+      title: "Requirement Analysis",
+      description:
+        "We collaborate with you to define clear, actionable requirements. Through detailed workshops and discussions, we ensure every aspect of your vision is captured and aligned with your business goals.",
+      image: analysisImage,
+    },
+    {
+      title: "Solution Design",
+      description:
+        "With insights from the discovery phase, we design an innovative solution that balances functionality, aesthetics, and cutting-edge technology. Every decision is backed by data, trends, and best practices, ensuring the solution is future-proof and scalable.",
+      image: designImage,
+    },
+    {
+      title: "Development & Testing",
+      description:
+        "Our team of experts brings the design to life, building a robust and high-performing solution. We rigorously test every feature and function to ensure it meets the highest quality standards before it’s ready for launch.",
+      image: developmentImage,
+    },
+    {
+      title: "Deployment & Launch",
+      description:
+        "We seamlessly deploy your solution, ensuring minimal disruption to your operations. From initial setup to final handover, we prioritize a smooth and successful launch, making sure you’re ready to impress from day one.",
+      image: deploymentImage,
+    },
+    {
+      title: "Growth & Scaling",
+      description:
+        "Once live, we stay by your side. Whether it’s scaling your solution, optimizing its performance, or expanding its features, we help your business adapt and thrive as it grows.",
+      image: scalingImage,
+    },
+  ];
+
   return (
-    <div>
-        <VerticalTimeline>
-          {timelineEvents.map((event, index) => (
-            <VerticalTimelineElement
-              key={index}
-              date={event.date}
-              iconStyle={{ background: '#f3d30d', color: '#f3d30d' }}
-              icon={<i className="fas fa-briefcase"></i>}
-            >
-              <h3 className="vertical-timeline-element-title">{event.title}</h3>
-              <h4 className={classes.desc}>{event.description}</h4>
-            </VerticalTimelineElement>
-          ))}
-        </VerticalTimeline>
-    </div>
-  )
-}
+    <ContentWrapper>
+      <div className={classes.timelineContainer}>
+        <div className={classes.verticalLine}></div>
+        {timelineEvents.map((event, index) => (
+          <div
+            key={index}
+            className={`${classes.timelineRow} ${
+              index % 2 === 0 ? classes.leftRow : classes.rightRow
+            }`}
+          >
+            {/* Image */}
+            <div className={classes.imageContainer}>
+              <img
+                src={event.image}
+                alt={event.title}
+                className={classes.image}
+              />
+            </div>
 
-export default Timeline
+            {/* Card */}
+            <div className={classes.cardContainer}>
+              <h3>{event.title}</h3>
+              <p>{event.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </ContentWrapper>
+  );
+};
 
-
-
-// import React, { useEffect, useRef, useState } from 'react';
-// import TimelineObserver from 'react-timeline-animation';
-// // import { fireConfetti } from './confetti'; // Ensure the path to confetti.js is correct
-// // import './styles.css'; // Ensure the path to styles.css is correct
-
-// const Timeline = ({ setObserver, callback }) => {
-//   const [message1, setMessage1] = useState('');
-//   const [message2, setMessage2] = useState('');
-//   const [message3, setMessage3] = useState('');
-
-//   const timeline1 = useRef(null);
-//   const timeline2 = useRef(null);
-//   const timeline3 = useRef(null);
-//   const circle1 = useRef(null);
-//   const circle2 = useRef(null);
-//   const circle3 = useRef(null);
-
-//   const someCallback = () => {
-//     setMessage1('okjadsadskojadskojdaskokjodsako');
-//     callback();
-//   };
-
-//   const someCallback2 = () => {
-//     setMessage2('Step two');
-//   };
-
-//   const someCallback3 = () => {
-//     setMessage3('Finish');
-//     fireConfetti();
-//   };
-
-//   useEffect(() => {
-//     setObserver(timeline1.current);
-//     setObserver(timeline2.current);
-//     setObserver(timeline3.current);
-//     setObserver(circle1.current, someCallback);
-//     setObserver(circle2.current, someCallback2);
-//     setObserver(circle3.current, someCallback3);
-//   }, [setObserver]);
-
-//   return (
-//     <div className="wrapper">
-//       <div id="timeline1" ref={timeline1} className="timeline" />
-//       <div className="circleWrapper">
-//         <div id="circle1" ref={circle1} className="circle"></div>
-//         <div className="message">{message1}</div>
-//       </div>
-//       <div id="timeline2" ref={timeline2} className="timeline" />
-//       <div className="circleWrapper">
-//         <div id="circle2" ref={circle2} className="circle">2</div>
-//         <div className="message">{message2}</div>
-//       </div>
-//       <div id="timeline3" ref={timeline3} className="timeline" />
-//       <div className="circleWrapper">
-//         <div id="circle3" ref={circle3} className="circle">3</div>
-//         <div className="message">{message3}</div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const TimelineWrapper = ({ onCallback }) => {
-//   return (
-//     <TimelineObserver
-//       initialColor="#e5e5e5"
-//       fillColor="black"
-//       handleObserve={(setObserver) => (
-//         <Timeline
-//           callback={onCallback}
-//           setObserver={setObserver}
-//         />
-//       )}
-//     />
-//   );
-// };
-
-// export default TimelineWrapper;
+export default Timeline;

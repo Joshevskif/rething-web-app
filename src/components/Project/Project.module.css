@@ -1,0 +1,143 @@
+/* Container Styling */
+.container {
+  background: linear-gradient(135deg, #4b2ae7, #f9cb2f); /* Gradient background */
+  min-height: 80vh;
+  margin-top: 60px;
+  padding: 20px 0;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f9cb2f;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #ccc;
+  margin-top: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Projects Section */
+.projectsSection {
+  padding: 50px 20px;
+  width: 100%;
+}
+
+/* Project Card Styling */
+.projectCard {
+  background: #333;
+  padding: 20px;
+  border-radius: 16px; /* Rounded corners for the card */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  height: 100%; /* Equal height cards */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Wrapper */
+.logoWrapper {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 50px;
+  height: 50px;
+  background: #333; 
+  border-radius: 8px; /* Small rounded logo container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 60%; /* Adjust logo size */
+  height: auto;
+}
+
+/* Content Wrapper */
+.contentWrapper {
+  margin-top: 80px; /* Space below the logo */
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.projectDescription {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.readMore {
+  color: #4b2ae7;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #4b2ae7;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.readMore:hover {
+  background: #4b2ae7;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projectCard {
+    padding: 15px;
+  }
+
+  .projectTitle {
+    font-size: 1.1rem;
+  }
+
+  .projectDescription {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+    padding: 10px;
+  }
+
+  .projectTitle {
+    font-size: 1rem;
+  }
+
+  .projectDescription {
+    font-size: 0.85rem;
+  }
+
+  .readMore {
+    font-size: 0.9rem;
+  }
+}

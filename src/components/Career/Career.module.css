@@ -1,62 +1,95 @@
 .div {
+  background: linear-gradient(135deg, #4b2ae7, #f9cb2f);
+  padding: 20px 0;
 }
 
 .wrapper {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 .heading {
-    background: linear-gradient(to right, #EDDE5D 0%, #EDDE5D 51%, #F09819 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #edde5d 0%, #edde5d 51%, #f09819 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 
 .para {
-    font-size: 18px;
-    margin-top: 30px;
-    line-height: 2rem;
-    width: 65%;
-    font-weight: 500;
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 2rem;
+  width: 65%;
+  font-weight: 500;
+  color: #fff; /* White text */
 }
 
 .heading2 {
-    margin-top: 50px;
+  margin-top: 50px;
+  font-size: 1.8rem;
+  color: #fff; /* White text */
 }
 
 .soft {
-    margin-top: 50px;
-    color: gray;
-    font-size: 18px;
+  margin-top: 50px;
+  color: #333; /* Different color for department title */
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .hr {
-    margin-top: 20px;
+  margin-top: 20px;
+  border: 0.5px solid #ddd;
 }
 
 .h4 {
-    margin: 30px 0px;
-    font-size: 20px;
-    color: #724CF9;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 30px 0;
+  font-size: 18px;
+  color: #fff; /* Keep position titles white */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .details {
-    font-size: 14px;
-    color: #000;
-    display: flex;
-    align-items: center;
+  font-size: 14px;
+  color: #fff; /* White text */
+  display: flex;
+  align-items: center;
 }
 
 .arrow {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .detailsText {
-    font-size: 16px;
-    padding-left: 20px;
-    margin: 10px 0 20px 0;
-    color: #333;
+  font-size: 16px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #333; /* Darker background for better contrast */
+  border-left: 5px solid #724cf9;
+  line-height: 1.8rem;
+  color: #fff; /* White text */
+}
+
+.detailsText strong {
+  color: #f09819; /* Keep highlights with this color */
+}
+
+.detailsText h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff; /* White text */
+}
+
+.detailsText ul {
+  margin: 15px 0;
+  padding-left: 20px;
+  color: #fff; /* White text */
+}
+
+.detailsText li {
+  margin-bottom: 10px;
+  line-height: 1.6rem;
+  color: #fff; /* White text */
 }

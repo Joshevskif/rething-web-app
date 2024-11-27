@@ -1,55 +1,77 @@
 .hero_container {
-    display: flex;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
+/* Text Styling */
 .left_container {
-    flex: 1;
-}
-.text_container {}
-
-.right_container{
-    flex: 1;
-}
-.right_container img{
-    width: 100%;
+  padding: 20px;
 }
 
+.text_container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.spanka {
+  color: #333;
+  font-weight: 800 !important;
+}
+
+/* Button Container */
 .button_container {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-.button_one{
-    all: unset;
-    background-color: var(--rething-yellow);
-    color: white;
-    font-family: 16px;
-    padding: 14px 42px;
-    border-radius: 50px;
+.button_two {
+  all: unset;
+  background-color: var(--rething-purple);
+  color: white;
+  font-size: 16px;
+  padding: 14px 42px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.button_two{
-    all: unset;
-    background-color: var(--rething-purple);
-    color: white;
-    font-size: 16px;
-    padding: 14px 42px;
-    border-radius: 50px;
+/* Paragraph Styling */
+.para {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 30px;
+  color: gray;
+  line-height: 1.8rem;
 }
 
-   
-.spanka{ 
-    color: var(--rething-yellow);
-    font-weight: 800 !important;
+/* Right Section */
+.right_container {
+  padding: 20px;
+}
+
+.right_container img,
+.right_container .w-100 {
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .text_container h1 {
+    font-size: 1.8rem;
   }
 
-.para {
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 30px;
-    color: gray;
-    line-height: 2rem;
+  .para {
+    font-size: 0.9rem;
+  }
+
+  .button_container {
+    justify-content: center; /* Center the button on mobile */
+  }
+
+  .button_two {
+    font-size: 14px;
+    padding: 10px 32px;
+  }
 }

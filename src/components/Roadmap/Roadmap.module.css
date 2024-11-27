@@ -1,53 +1,37 @@
-/* Technologies.module.css */
-.container {
-    text-align: center;
-  }
-  
-  .color {
-    /* background: linear-gradient(to right, #ffffe0, #fffacd, #fff8b5, #ffeb99); */
-    background-color: white;
-    padding: 50px 0px;
-}
-  .text {
-    font-size: 46px;
-  }
-
-  .flex_container{
-    display: flex;
-    margin-top: 50px;
-    align-items: center;
-    
-  }
-
-  .left_container{
-    flex: 1;
-
-  }
-
-  .left_container h3 {
-    width: 80%;
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .left_container h2 {
-    margin: 15px 0px;
-    font-size: 32px;
-  }
-  
-
-  .right_container {
-    flex: 1;
-  }
-  .right_container img{
-    width: 100%;
-    margin-top: 100px;
+.color {
+  background-color: #fff;
+  padding: 60px 20px;
 }
 
-.first-delay {
-    animation-delay: 3s;
+.text {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .para {
-    margin: 20px 0px 100px 0px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

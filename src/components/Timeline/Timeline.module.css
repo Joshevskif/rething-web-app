@@ -1,5 +1,70 @@
+.timelineContainer {
+}
 
+.timelineRow {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
 
-.desc {
-    background-color: red;
+.cardContainer {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 40%;
+  z-index: 1;
+  margin: 50px 50px; /* Default margin for larger screens */
+}
+
+.imageContainer {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: 50px 50px; /* Default margin for larger screens */
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Left Row */
+.leftRow .imageContainer {
+  order: 1;
+}
+
+.leftRow .cardContainer {
+  order: 2;
+  margin-left: 20px; /* Default margin */
+}
+
+/* Right Row */
+.rightRow .imageContainer {
+  order: 2;
+}
+
+.rightRow .cardContainer {
+  order: 1;
+  margin-right: 20px; /* Default margin */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .timelineRow {
+    flex-direction: column;
+    margin-bottom: 10px; /* Further reduced gap between rows */
+  }
+
+  .imageContainer {
+    display: none; /* Hide images on mobile */
+  }
+
+  .cardContainer {
+    max-width: 90%; /* Expand cards to fit screen width */
+    margin: 10px auto; /* Reduced margin for smaller spacing between cards */
+  }
 }

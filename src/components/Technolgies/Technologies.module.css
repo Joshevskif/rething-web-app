@@ -1,41 +1,90 @@
-/* Technologies.module.css */
 .container {
-    text-align: center;
+  text-align: center;
+  background: linear-gradient(135deg, #4b2ae7, hsl(46, 94%, 58%));
+  padding: 50px 20px;
+}
+
+.para {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text {
+  font-size: 46px;
+  line-height: 3rem;
+  color: #fff;
+}
+
+.marquee {
+  position: relative;
+  margin: 50px 0px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marqueeInner {
+  display: flex;
+  width: fit-content;
+  animation: marquee 20s linear infinite;
+}
+
+.circle {
+  width: 120px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.circle img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
-  
-  .para {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .marquee {
-    position: relative;
-    margin: 50px 0px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 32px;
+    line-height: 2.5rem;
   }
 
-  .text{
-    font-size: 46px;
-    line-height: 3rem;
+  .circle {
+    width: 80px;
+    height: 80px;
   }
-  
-  .marqueeInner {
-    display: flex;
-    width: fit-content;
-    animation: marquee 20s linear infinite;
+
+  .circle img {
+    width: 60%;
   }
-  
-  .marqueeInner img {
-    padding: 0 20px; /* Adjust padding for spacing */
-    height: 100%;
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 24px;
+    line-height: 2rem;
   }
-  
-  @keyframes marquee {
-    0% { transform: translateX(20%); }
-    100% { transform: translateX(-50%); }
+
+  .circle {
+    width: 60px;
+    height: 60px;
   }
-  
+
+  .circle img {
+    width: 50%;
+  }
+}

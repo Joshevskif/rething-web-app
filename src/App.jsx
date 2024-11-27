@@ -10,6 +10,9 @@ import Technologies from "./components/Technolgies/Technologies"
 import LandingPage from "./components/LandingPage/LandingPage"
 import Contact from "./components/Contact/Contact"
 import Career from "./components/Career/Career"
+import AboutUs from "./components/AboutUs/AboutUs"
+import MeetTheTeam from "./components/MeetTheTeam/MeetTheTeam"
+import Project from "./components/Project/Project"
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
         <Route path="/" element={<LandingPage/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/career" element={<Career/>} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/meetTheTeam" element={<MeetTheTeam />} />
+        <Route path="/project" element={<Project />} />
       </Routes>
     </Router>
      

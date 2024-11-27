@@ -1,0 +1,110 @@
+/* Footer Base Styling */
+.footer {
+  background-color: #333; /* Black background */
+  color: white;
+  padding: 20px 50px; /* Consistent padding across pages */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Logo Styling */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Social Icons Styling */
+.iconLink {
+  margin-right: 15px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-top: 20px; /* Reduced spacing for consistency */
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Contact Button */
+.contactBtn {
+  background-color: #f3d30d; /* Button background color */
+  color: #000; /* Button text color */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.contactBtn:hover {
+  background-color: #d6b207; /* Slightly darker shade for hover */
+  transform: scale(1.05);
+}
+
+/* Center Content Styling */
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align text and button in the center */
+  justify-content: center; /* Vertically center within the column */
+  height: 100%; /* Ensure full height */
+}
+
+/* Center Text */
+.text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Copyright Text */
+.copyRight {
+  font-size: 12px;
+  color: #ccc; /* Muted text for copyright */
+  margin-top: 20px;
+}
+
+/* Map Styling */
+.map {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 20px; /* Reduced padding for smaller screens */
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .icon {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+  }
+
+  .contactBtn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .map {
+    height: 150px; /* Adjusted height for mobile screens */
+  }
+}

@@ -1,0 +1,134 @@
+/* General About Container */
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+/* Left Section */
+.leftSection {
+  padding: 50px;
+  background-color: var(--rething-yellow); /* Keep the yellow background */
+  color: #fff; /* Make all text white */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000; /* Ensure the title is white */
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333; /* Ensure the paragraph text is white */
+}
+
+/* Right Section */
+.rightSection {
+  padding: 50px;
+  background-color: var(--rething-white);
+  text-align: center;
+}
+
+.missionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 90px;
+}
+
+.missionParagraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.missionImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Why Choose Us Section */
+.whyChooseUsSection {
+  background-color: var(--rething-dark);
+  color: var(--rething-white);
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 0; /* Ensure no gap below this section */
+  padding-bottom: 0;
+}
+
+footer {
+  margin-top: 0; /* Ensure no gap above the footer */
+}
+
+.whyTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.whyDescription {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.whyCard {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.whyCard:hover {
+  transform: translateY(-5px);
+}
+
+.yellowCard {
+  background-color: var(--rething-yellow);
+  color: #333
+}
+
+.whiteCard {
+  background-color: var(--rething-white);
+  color: #333
+}
+
+.purpleCard {
+  background-color: var(--rething-purple);
+  color: #fff
+}
+
+.footer{
+  margin-bottom: 110px;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column; /* Stack left and right sections vertically */
+    padding: 10px; /* Reduce padding */
+    margin-top: 50px;
+  }
+
+  .rightSection {
+    padding: 10px;
+  }
+
+  .missionTitle {
+    font-size: 1.3rem;
+    margin-top: 20px; /* Adjust title size for mobile */
+  }
+
+  .missionParagraph {
+    font-size: 0.9rem; /* Adjust paragraph size for mobile */
+    line-height: 1.5;
+  }
+
+  .missionImage {
+    margin-top: 10px; /* Reduce spacing for mobile */
+  }
+}

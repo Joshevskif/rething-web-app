@@ -1,22 +1,52 @@
-import React from 'react';
-import { FaApple, FaAndroid, FaWindows } from 'react-icons/fa';
-import classes from './Technologies.module.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import logo4 from "../../assets/logo-slider-4.webp";
+import React from "react";
+import classes from "./Technologies.module.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import boksyMK from "../../assets/boksymklogo.png";
+import boksySE from "../../assets/boksyse.png";
+import illumination from "../../assets/Illumination.svg";
+import eva from "../../assets/eva.png";
+import mZaednica from "../../assets/mZaednica.png";
+import Stabenfeldt from "../../assets/Stabenfeldt.png";
+import zoion from "../../assets/zoion-logo.png";
+import kore from "../../assets/kore.png";
 
 const Technologies = () => {
+  const logos = [
+    { src: boksyMK, alt: "Boksy MK" },
+    { src: boksySE, alt: "Boksy SE" },
+    { src: illumination, alt: "Illumination" },
+    { src: eva, alt: "EVA" },
+    { src: mZaednica, alt: "MZaednica" },
+    { src: Stabenfeldt, alt: "Stabenfeldt" },
+    { src: zoion, alt: "Zoion" },
+    { src: kore, alt: "Kore" },
+  ];
+
+  // Duplicate the logos to make a seamless carousel
+  const duplicatedLogos = [...logos, ...logos];
+
   return (
-    <div className={`animate__animated animate__fadeIn ${classes.container}`}>
-      <p className={classes.para}>TRUSTED BY HUNDREDS OF BUSINESSES</p>
-      <h2 className={classes.text}>Fueling Growth for North America's <br/> Leading Finance Teams</h2>
-      <div className={classes.marquee}>
-        <div className={classes.marqueeInner}>
-          <img src={logo4} width={600} alt="Logo 1" />
-          <img src={logo4} width={600} alt="Logo 2" />
-          <img src={logo4} width={600} alt="Logo 3" />
-          <img src={logo4} width={600} alt="Logo 3" />
-          <img src={logo4} width={600} alt="Logo 3" />
+    <div
+      className={`animate__animated animate__fadeIn ${classes.container} container-fluid`}
+    >
+      <div className="row text-center mb-4">
+        <h2 className={classes.text}>
+          Our latest projects<br /> 
+        </h2>
+      </div>
+
+      <div className={`row justify-content-center ${classes.marquee}`}>
+        <div className={`${classes.marqueeInner} col-12`}>
+          {duplicatedLogos.map((logo, index) => (
+            <div
+              key={index}
+              className={`col-4 col-md-3 col-lg-1 ${classes.circle}`}
+            >
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,53 +1,133 @@
+/* Main Wrapper */
 .main_wrapper {
     height: 90px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    position: fixed; /* Make the navigation bar fixed */
-    width: 100%; /* Ensure it takes the full width */
-    top: 0; /* Position it at the top */
-    background-color: white; /* Add a background color to avoid transparency issues */
-    z-index: 1000; /* Ensure it stays above other elements */
-}
-
-.wrapper {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Wrapper for logo, links, and button */
+  .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
-    height: 100%;
-}
-
-.link_container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* Desktop Navigation - Center Links */
+  .link_container {
     display: flex;
+    justify-content: center;
     gap: 40px;
-}
-
-.link_container a {
+    flex-grow: 1;
+  }
+  
+  .link_container a {
     all: unset;
     font-size: 16px;
     line-height: 1.3rem;
     font-weight: 500;
     cursor: pointer;
     letter-spacing: 1px;
-}
-.logo {
-    cursor: pointer;
-}
-.button_one {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .link_container a:hover {
+    color: #4b2ae7;
+  }
+  
+  /* Contact Button */
+  .button_one {
     all: unset;
-    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+    background-image: linear-gradient(to right, #f09819 0%, #edde5d 51%, #f09819 100%);
     padding: 10px 30px;
     transition: 0.5s;
     background-size: 200% auto;
-    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 0 20px rgba(238, 238, 238, 0.8);
     border-radius: 50px;
     color: white;
     font-size: 14px;
     cursor: pointer;
     font-weight: 500;
-}
-
-.button_one:hover {
-    background-position: right center; /* Change the direction of the change here */
+  }
+  
+  .button_one:hover {
+    background-position: right center;
     color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Hamburger Menu for Mobile */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .link {
     text-decoration: none;
-}
+  }
+  
+  .hamburger div {
+    background-color: black;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+  }
+  
+  /* Mobile Dropdown Menu */
+  .mobileMenu {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobileMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mobileMenu a:hover {
+    background-color: #f3d30d;
+  }
+  
+  /* Mobile Only */
+  @media (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

@@ -1,0 +1,8 @@
+.pageWrapper {
+    background-color: #f9cb2f; /* Set the entire page background to black */
+    color: #fff; /* Default text color to white for readability */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    margin: 0;
+    padding: 0;
+  }
+  
