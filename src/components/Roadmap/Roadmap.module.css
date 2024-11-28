@@ -1,37 +1,85 @@
 .color {
   background-color: #fff;
-  padding: 60px 20px;
+  padding: 20px 10px; /* Reduced padding for tighter layout */
 }
 
 .text {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 32px; /* Retain readable size */
+  margin-bottom: 5px; /* Minimized bottom margin */
   color: #333;
 }
 
 .para {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px; /* Reduced margin for compact spacing */
   color: #333;
 }
 
 .heading {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 20px 0 10px;
+  margin: 8px 0; /* Tighten margins */
   color: #333;
 }
 
 .subheading {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 5px; /* Minimal spacing */
 }
 
 .img-fluid {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-top: 10px; /* Reduced gap */
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 28px;
+  }
+
+  .para {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .subheading {
+    font-size: 13px;
+  }
+
+  .img-fluid {
+    margin-top: 0px; /* Further reduce gap on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .para {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+
+  .subheading {
+    font-size: 12px;
+  }
+
+  .img-fluid {
+    margin-top: 10px;
+  }
 }

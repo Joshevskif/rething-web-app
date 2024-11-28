@@ -20,7 +20,7 @@ const Roadmap = () => {
   });
 
   return (
-    <div className={`container-fluid ${classes.color}`}>
+    <div className={`${classes.color}`}>
       <ContentWrapper>
         <div className="container text-center">
           <h1 className={classes.text}>Roadmap to Digital Transformation</h1>

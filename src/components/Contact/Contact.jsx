@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <>
       <NavigationMenu />
-      <div className={`${classes.container}`}>
-        <div className={`row flex-grow-1 ${classes.mainContent}`}>
+      <div className={classes.container}>
+        <div className={`row ${classes.mainContent}`}>
           {/* Left Section */}
           <div className={`col-12 col-lg-6 ${classes.leftSection}`}>
             <div className={classes.text}>
@@ -30,17 +30,11 @@ const Contact = () => {
 
           {/* Right Section */}
           <div className={`col-12 col-lg-6 ${classes.rightSection}`}>
-            {/* Formspree Integration */}
-            <form
-              className={classes.form}
-              action="https://formspree.io/f/xvgowqbr" // Your Formspree form URL
-              method="POST"
-            >
+            <form className={classes.form}>
               <label>
                 Company Name / Your Name
                 <input
                   type="text"
-                  name="name" // Field name to send to Formspree
                   placeholder="Enter your company name / your name"
                   required
                 />
@@ -49,7 +43,6 @@ const Contact = () => {
                 Phone Number
                 <input
                   type="tel"
-                  name="phone" // Field name to send to Formspree
                   placeholder="Enter your phone number"
                   required
                 />
@@ -58,7 +51,6 @@ const Contact = () => {
                 Work Email
                 <input
                   type="email"
-                  name="email" // Field name to send to Formspree
                   placeholder="Enter your work email"
                   required
                 />
@@ -66,7 +58,6 @@ const Contact = () => {
               <label>
                 Anything else we should know?
                 <textarea
-                  name="message" // Field name to send to Formspree
                   placeholder="Type your message"
                   rows="5"
                 ></textarea>

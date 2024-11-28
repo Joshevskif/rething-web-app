@@ -1,17 +1,11 @@
 import React from "react";
 import ContentWrapper from "../ContentWrapper/ContentWrapper";
-import Button from "../Button/Button";
-import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import video from "../../assets/video1.json";
 import classes from "./Hero.module.css";
 
 const Hero = () => {
-  const { ref: animatedRef, inView: isInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <ContentWrapper className={`container ${classes.hero_container}`}>
       <div className="row align-items-center">
@@ -20,17 +14,16 @@ const Hero = () => {
           className={`col-12 col-lg-6 text-center text-lg-start animate__animated animate__fadeInLeft ${classes.left_container}`}
         >
           <div className={classes.text_container}>
-            <h1>Reimagine Your Business </h1>
+            <h1>Rething - Building custom software</h1>
             <h1>
-              Operations <span className={classes.spanka}></span>
+              and delivering scalable <span className={classes.spanka}></span>
             </h1>
-            <h1 className={classes.spanka}>with Us?</h1>
+            <h1 className={classes.spanka}>solutions?</h1>
           </div>
           <div className={classes.button_container}>
-            <Button
-              className={classes.button_two}
-              text={"At Rething, we don’t just build software. "}
-            />
+            <Link to="/contact">
+              <button className={classes.contactBtn}>At Rething, we don’t just build software.</button>
+            </Link>
           </div>
           <p className={classes.para}>
             We build solutions that augment your teams, digitize your business

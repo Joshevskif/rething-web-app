@@ -1,24 +1,23 @@
 .container {
   text-align: center;
   background: linear-gradient(135deg, #4b2ae7, hsl(46, 94%, 58%));
-  padding: 50px 20px;
+  padding: 40px 15px; /* Adjust padding for mobile */
 }
 
 .para {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.1em;
+  margin-bottom: 0px;
   color: #fff;
 }
 
 .text {
-  font-size: 46px;
-  line-height: 3rem;
+  font-size: 36px; /* Smaller heading for mobile */
+  line-height: 2.5rem;
   color: #fff;
 }
 
 .marquee {
   position: relative;
-  margin: 50px 0px;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -28,24 +27,10 @@
 
 .marqueeInner {
   display: flex;
-  width: fit-content;
-  animation: marquee 20s linear infinite;
-}
-
-.circle {
-  width: 120px;
-  height: 125px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  margin: 10px;
-}
-
-.circle img {
-  width: 70%;
-  height: auto;
-  object-fit: contain;
+  width: fit-content;
+  animation: marquee 15s linear infinite; /* Faster scrolling on mobile */
 }
 
 @keyframes marquee {
@@ -57,34 +42,61 @@
   }
 }
 
+.circle {
+  width: 80px; /* Smaller circles on mobile */
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 5px; /* Reduce margin for mobile */
+}
+
+.circle img {
+  width: 60%; /* Adjust image size within circles */
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(30%);
+  transition: filter 0.3s ease;
+}
+
+.circle img:hover {
+  filter: grayscale(0%) brightness(100%);
+}
+
 @media (max-width: 768px) {
   .text {
-    font-size: 32px;
-    line-height: 2.5rem;
+    font-size: 28px; /* Further reduce font size for small tablets */
+    line-height: 2.3rem;
   }
 
   .circle {
-    width: 80px;
-    height: 80px;
+    width: 70px; /* Smaller size for smaller screens */
+    height: 70px;
   }
 
   .circle img {
-    width: 60%;
+    width: 55%; /* Adjust image size */
   }
 }
 
 @media (max-width: 576px) {
   .text {
-    font-size: 24px;
+    font-size: 22px; /* Font size for phones */
     line-height: 2rem;
   }
 
   .circle {
-    width: 60px;
+    width: 60px; /* Optimal size for mobile phones */
     height: 60px;
   }
 
   .circle img {
-    width: 50%;
+    width: 50%; /* Adjust image to maintain good spacing */
+    height: 100%;
+  }
+
+  .marqueeInner {
+    animation: marquee 12s linear infinite; /* Faster scroll on smaller screens */
   }
 }

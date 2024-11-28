@@ -1,17 +1,19 @@
 .hero_container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-/* Text Styling */
+/* Left Section */
 .left_container {
   padding: 20px;
 }
 
+/* Text Styling */
 .text_container h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .spanka {
@@ -27,14 +29,28 @@
   margin-top: 30px;
 }
 
-.button_two {
-  all: unset;
-  background-color: var(--rething-purple);
-  color: white;
-  font-size: 16px;
-  padding: 14px 42px;
-  border-radius: 50px;
+.contactBtn {
+  background-color: #6c63ff; /* Vibrant purple background */
+  color: #fff; /* White text */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 14px 42px; /* Adjust padding for rounded look */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Fully rounded button */
   cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contactBtn:hover {
+  background-color: #4c42c3; /* Darker shade for hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.contactBtn:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.8); /* Add glow effect */
 }
 
 /* Paragraph Styling */
@@ -70,7 +86,7 @@
     justify-content: center; /* Center the button on mobile */
   }
 
-  .button_two {
+  .contactBtn {
     font-size: 14px;
     padding: 10px 32px;
   }

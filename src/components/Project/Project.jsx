@@ -122,9 +122,6 @@ const Project = () => {
                     <p className={classes.projectDescription}>
                       {project.description}
                     </p>
-                    <a href={project.readMoreLink} className={classes.readMore}>
-                      Learn More
-                    </a>
                   </div>
                 </div>
               </div>
