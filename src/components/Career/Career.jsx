@@ -17,8 +17,7 @@ const Career = () => {
   const jobPositions = [
     {
       department: "Software Development Department",
-      positions: [
-      ],
+      positions: [],
     },
     {
       department: "Department of Marketing and Sales",
@@ -46,6 +45,28 @@ const Career = () => {
               <li><span style="color: #4CAF50;">A proactive, problem-solving mindset suitable for a startup environment.</span></li>
             </ul>
             <p>Join us to revolutionize publishing and grow the Boksy app across the region.</p>
+          `,
+        },
+        {
+          title: "Marketing and Advertising Specialist",
+          details: `
+            <p><strong>Marketing and Advertising Specialist</strong></p>
+            <p>We’re looking for a creative and results-driven <strong>Marketing and Advertising Specialist</strong> to design and execute campaigns that scale businesses.</p>
+            <h4>Key Responsibilities:</h4>
+            <ul>
+              <li>Campaign Management: Plan and execute multi-channel campaigns across digital, social, and traditional media.</li>
+              <li>Brand Building: Ensure consistent messaging and enhance brand awareness.</li>
+              <li>Market Insights: Conduct research and analyze trends to target audiences effectively.</li>
+              <li>Content Coordination: Collaborate on marketing collateral and engaging content.</li>
+              <li>Performance Tracking: Measure campaign ROI and optimize based on analytics.</li>
+            </ul>
+            <h4>Qualifications:</h4>
+            <ul>
+              <li>Bachelor’s degree in Marketing, Advertising, or related field.</li>
+              <li>2+ years in marketing or advertising with proven campaign success.</li>
+              <li>Strong skills in digital tools (Google Analytics, Ads Manager, etc.) and creative problem-solving.</li>
+              <li>Data-driven and loves to bring initiatives.</li>
+            </ul>
           `,
         },
       ],
@@ -89,8 +110,8 @@ const Career = () => {
             <h1 className={classes.heading}>Career</h1>
             <p className={classes.para}>
               Join the ReThing team and be part of a dynamic and innovative work
-              culture. Discover exciting career opportunities and become a driving
-              force behind the next wave of digital transformation.
+              culture. Discover exciting career opportunities and become a
+              driving force behind the next wave of digital transformation.
             </p>
           </div>
 
